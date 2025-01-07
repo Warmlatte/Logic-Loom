@@ -64,7 +64,7 @@ jobs:
           hugo \
             --gc \
             --minify \
-            --baseURL "https://warmlatte.github.io/Logic-Loom"
+            --baseURL "https://warmlatte.github.io/"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
