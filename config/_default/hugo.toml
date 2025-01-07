@@ -6,10 +6,10 @@
 theme = "blowfish" # UNCOMMENT THIS LINE
 
 # 正式網址
-baseURL = "https://warmlatte.github.io/"
+baseURL = "https://warmlatte.github.io/Logic-Loom/"
 
 relativeURLs = true
-# canonifyURLs = true
+canonifyURLs = true
 
 defaultContentLanguage = "en"
 
