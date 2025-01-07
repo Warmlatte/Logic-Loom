@@ -6,10 +6,10 @@
 theme = "blowfish" # UNCOMMENT THIS LINE
 
 # 正式網址
-# baseURL = "https://warmlatte.github.io/Logic-Loom"
+baseURL = "https://warmlatte.github.io/"
 
 relativeURLs = true
-canonifyURLs = true
+# canonifyURLs = true
 
 defaultContentLanguage = "en"
 
@@ -51,6 +51,7 @@ enableEmoji = true
 
 # 自定義參數
 [params]
+  localBaseURL = "http://localhost:1313/"
   showPostSection = true  # 啟用文章列表
 
 # 控制網站的 sitemap 配置
