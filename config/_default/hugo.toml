@@ -1,0 +1,95 @@
+# -- Site Configuration --
+# Refer to the theme docs for more details about each of these parameters.
+# https://blowfish.page/docs/getting-started/
+
+# 主題
+theme = "blowfish" # UNCOMMENT THIS LINE
+
+# 正式網址
+# baseURL = "https://warmlatte.github.io"
+
+relativeURLs = true
+canonifyURLs = true
+
+defaultContentLanguage = "en"
+
+# 列表標題多數化 post -> posts
+# pluralizeListTitles = "true" # hugo function useful for non-english languages, find out more in  https://gohugo.io/getting-started/configuration/#pluralizelisttitles
+
+# 允許搜索引擎爬取網站
+enableRobotsTXT = true
+
+# 控制摘要的最大字數
+summaryLength = 0
+
+# 生成帶有 draft: true 的草稿文章
+buildDrafts = false
+
+# 生成未來的文章（date 在當前時間之後）
+buildFuture = false
+
+# 允許使用 Emoji
+enableEmoji = true
+
+# 添加 Google Analytics 追蹤代碼
+# googleAnalytics = "G-XXXXXXXXX"
+
+# 設定文章分頁
+[pagination]
+  pagerSize = 5 # 定義每頁顯示的文章數量
+
+# 控制圖片的處理與顯示
+[imaging]
+  anchor = 'Center'
+
+# 定義網站的分類與標籤
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  author = "authors"
+  series = "series"
+
+# 自定義參數
+[params]
+  showPostSection = true  # 啟用文章列表
+
+# 控制網站的 sitemap 配置
+[sitemap]
+  changefreq = 'daily'
+  filename = 'sitemap.xml'
+  priority = 0.5
+
+# 輸出格式
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+# 相關文章
+#  [related]
+#    threshold = 0
+#    toLower = false
+
+#    [[related.indices]]
+#        name = "tags"
+#        weight = 100
+
+#    [[related.indices]]
+#        name = "categories"
+#        weight = 100
+
+#    [[related.indices]]
+#        name = "series"
+#        weight = 50
+
+#    [[related.indices]]
+#        name = "authors"
+#        weight = 20
+
+#    [[related.indices]]
+#        name = "date"
+#        weight = 10
+
+#    [[related.indices]]
+#      applyFilter = false
+#      name = 'fragmentrefs'
+#      type = 'fragments'
+#      weight = 10

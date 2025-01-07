@@ -1,0 +1,205 @@
+# -- Theme Options --
+# These options control how the theme functions and allow you to
+# customise the display of your website.
+#
+# Refer to the theme docs for more details about each of these parameters.
+# https://blowfish.page/docs/configuration/#theme-parameters
+
+# 主色調 -> Congo || Avocado
+colorScheme = "Congo"
+# 預設外觀
+defaultAppearance = "dark" # valid options: light or dark
+# 自動切換外觀
+autoSwitchAppearance = true
+
+# 站內搜尋
+enableSearch = true
+# 顯示「複製代碼」按鈕
+enableCodeCopy = true
+
+# 啟用通過電子郵件回覆
+replyByEmail = false
+
+# 主選單的內容區域（如文章分類）
+mainSections = ["posts", "section2"]
+# robots = ""
+
+# 圖片優化 -> false 表示啟用
+disableImageOptimization = false
+# 頁首的文字顯示 -> false 表示顯示
+disableTextInHeader = false
+# backgroundImageWidth = 1200
+
+# 預設的背景圖片或文章特色圖片路徑
+# defaultBackgroundImage = "bg.jpeg" # used as default for background images 
+# defaultFeaturedImage = "IMAGE.jpg" # used as default for featured images in all articles
+
+
+# highlightCurrentMenuArea = true
+# smartTOC = true
+# smartTOCHideUnfocusedChildren = true
+
+giteaDefaultServer = "https://git.fsfe.org"
+forgejoDefaultServer = "https://v8.next.forgejo.org"
+
+# 頁首
+[header]
+  # 控制頁首的佈局樣式
+  layout = "basic" # valid options: basic, fixed, fixed-fill, fixed-gradient, fixed-fill-blur
+
+[footer]
+  showMenu = true
+  showCopyright = true
+  showThemeAttribution = true
+  showAppearanceSwitcher = true
+  showScrollToTop = true
+
+[homepage]
+  # 首頁風格
+  layout = "background" # valid options: page, profile, hero, card, background, custom
+  homepageImage = "bg.jpeg" # used in: hero, and card
+  # 最近文章
+  showRecent = true
+  # 最近文章數量
+  showRecentItems = 100
+  # 顯示更多按鈕
+  showMoreLink = false
+  # 顯示更多按鈕連結頁面
+  showMoreLinkDest = "/posts/"
+  # 啟用卡片式顯示
+  cardView = false
+  cardViewScreenWidth = false
+  layoutBackgroundBlur = false # only used when layout equals background
+
+[article]
+  showDate = true     # 顯示文章日期
+  showViews = false   # 顯示文章瀏覽次數
+  showLikes = false   # 顯示文章喜歡次數
+  showDateOnlyInArticle = false
+  showDateUpdated = false
+  showAuthor = true   # 顯示作者名稱
+  # showAuthorBottom = false
+  showHero = false    # 啟用英雄圖片
+  # heroStyle = "basic" # valid options: basic, big, background, thumbAndBackground
+  layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
+  layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
+  showBreadcrumbs = false
+  showDraftLabel = true
+  showEdit = false
+  # editURL = "https://github.com/username/repo/"
+  editAppendPath = true
+  seriesOpened = false
+  showHeadingAnchors = true
+  showPagination = true
+  invertPagination = false
+  showReadingTime = false
+  showTableOfContents = false
+  # showRelatedContent = false
+  # relatedContentLimit = 3
+  showTaxonomies = false
+  showAuthorsBadges = false
+  showWordCount = true
+  # sharingLinks = [ "linkedin", "twitter", "bluesky", "mastodon", "reddit", "pinterest", "facebook", "email", "whatsapp", "telegram"]
+  showZenMode = false
+
+[list]
+  # 顯示英雄圖片
+  showHero = false
+  # heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+  
+  # 啟用背景模糊
+  layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
+  layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
+  
+  showBreadcrumbs = false
+  
+  # 顯示文章摘要
+  showSummary = false
+  
+  showViews = false
+  showLikes = false
+  showTableOfContents = false
+  showCards = false
+  
+  # 根據權重排序
+  orderByWeight = false
+  
+  # 按年份分組文章
+  groupByYear = false
+  cardView = false
+  cardViewScreenWidth = false
+  constrainItemsWidth = false
+
+[sitemap]
+  excludedKinds = ["taxonomy", "term"]
+
+[taxonomy]
+  # 顯示分類/標籤下的文章數量
+  showTermCount = true
+
+  showHero = false
+  # heroStyle = "background" # valid options: basic, big, background, 
+  
+  # 顯示面包屑導航
+  showBreadcrumbs = false
+
+  showViews = false
+  showLikes = false
+
+  # 顯示分類或標籤頁面的目錄
+  showTableOfContents = false
+
+  cardView = false
+
+[term]
+  showHero = false
+  # heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+  showBreadcrumbs = false
+  showViews = false
+  showLikes = false
+  showTableOfContents = true
+  groupByYear = false
+  cardView = false
+  cardViewScreenWidth = false
+
+[firebase]
+  # apiKey = "XXXXXX"
+  # authDomain = "XXXXXX"
+  # projectId = "XXXXXX"
+  # storageBucket = "XXXXXX"
+  # messagingSenderId = "XXXXXX"
+  # appId = "XXXXXX"
+  # measurementId = "XXXXXX"
+
+[fathomAnalytics]
+  # site = "ABC12345"
+  # domain = "llama.yoursite.com"
+
+[umamiAnalytics]
+  # websiteid = "ABC12345"
+  # domain = "llama.yoursite.com"
+  # dataDomains = "yoursite.com,yoursite2.com"
+  # scriptName = ""
+  # enableTrackEvent = true
+
+[selineAnalytics]
+  # token = "XXXXXX"
+  # enableTrackEvent = true
+
+[buymeacoffee]
+  # identifier = ""
+  # globalWidget = true
+  # globalWidgetMessage = "Hello"
+  # globalWidgetColor = "#FFDD00"
+  # globalWidgetPosition = "Right"
+
+[verification]
+  # google = ""
+  # bing = ""
+  # pinterest = ""
+  # yandex = ""
+  # fediverse = ""
+
+[rssnext]
+  # feedId = ""
+  # userId = ""
