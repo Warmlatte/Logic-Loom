@@ -6,7 +6,7 @@
 # https://blowfish.page/docs/configuration/#theme-parameters
 
 # 主色調 -> Congo || Avocado
-colorScheme = "Congo"
+colorScheme = "blowfish"
 # 預設外觀
 defaultAppearance = "dark" # valid options: light or dark
 # 自動切換外觀
