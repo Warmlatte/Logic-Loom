@@ -38,4 +38,10 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
+  <url>
+    <loc>https://warmlatte.github.io/posts/set_hogo/</loc>
+    <lastmod>2025-01-01T13:39:34+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
 </urlset>
