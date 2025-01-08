@@ -8,14 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>為 Express 專案打造互動式 Swagger API 文檔 🌐 &middot; Logic Loom 🧠🕸️</title>
-  <meta name="title" content="為 Express 專案打造互動式 Swagger API 文檔 🌐 &middot; Logic Loom 🧠🕸️" />
+  <title>使用 Firebase Admin SDK 實現身份驗證中間件教學 🔐✨ &middot; Logic Loom 🧠🕸️</title>
+  <meta name="title" content="使用 Firebase Admin SDK 實現身份驗證中間件教學 🔐✨ &middot; Logic Loom 🧠🕸️" />
   
   
   
   
   
-  <link rel="canonical" href="http://localhost:1313/posts/set_swagger/" />
+  <link rel="canonical" href="http://localhost:1313/posts/set_firebase_authmiddleware/" />
   
   
   
@@ -67,18 +67,18 @@
   
   
   
-  <meta property="og:url" content="http://localhost:1313/posts/set_swagger/">
+  <meta property="og:url" content="http://localhost:1313/posts/set_firebase_authmiddleware/">
   <meta property="og:site_name" content="Logic Loom 🧠🕸️">
-  <meta property="og:title" content="為 Express 專案打造互動式 Swagger API 文檔 🌐">
+  <meta property="og:title" content="使用 Firebase Admin SDK 實現身份驗證中間件教學 🔐✨">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2025-01-05T19:16:11+08:00">
-    <meta property="article:modified_time" content="2025-01-05T19:16:11+08:00">
+    <meta property="article:published_time" content="2025-01-08T23:05:38+08:00">
+    <meta property="article:modified_time" content="2025-01-08T23:05:38+08:00">
 
   
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="為 Express 專案打造互動式 Swagger API 文檔 🌐">
+  <meta name="twitter:title" content="使用 Firebase Admin SDK 實現身份驗證中間件教學 🔐✨">
 
   
   <script type="application/ld+json">
@@ -86,26 +86,26 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "",
-    "name": "為 Express 專案打造互動式 Swagger API 文檔 🌐",
-    "headline": "為 Express 專案打造互動式 Swagger API 文檔 🌐",
+    "name": "使用 Firebase Admin SDK 實現身份驗證中間件教學 🔐✨",
+    "headline": "使用 Firebase Admin SDK 實現身份驗證中間件教學 🔐✨",
     
     
     "inLanguage": "en",
-    "url" : "http:\/\/localhost:1313\/posts\/set_swagger\/",
+    "url" : "http:\/\/localhost:1313\/posts\/set_firebase_authmiddleware\/",
     "author" : {
       "@type": "Person",
       "name": "Latte"
     },
     "copyrightYear": "2025",
-    "dateCreated": "2025-01-05T19:16:11\u002b08:00",
-    "datePublished": "2025-01-05T19:16:11\u002b08:00",
+    "dateCreated": "2025-01-08T23:05:38\u002b08:00",
+    "datePublished": "2025-01-08T23:05:38\u002b08:00",
     
-    "dateModified": "2025-01-05T19:16:11\u002b08:00",
+    "dateModified": "2025-01-08T23:05:38\u002b08:00",
     
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "379"
+    "wordCount": "355"
   }]
   </script>
 
@@ -443,7 +443,7 @@
   <header id="single_header" class="mt-5 max-w-prose">
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      為 Express 專案打造互動式 Swagger API 文檔 🌐
+      使用 Firebase Admin SDK 實現身份驗證中間件教學 🔐✨
     </h1>
     <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
@@ -486,7 +486,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2025-01-05T19:16:11&#43;08:00">5 January 2025</time><span class="px-2 text-primary-500">&middot;</span><span>379 words</span>
+  <time datetime="2025-01-08T23:05:38&#43;08:00">8 January 2025</time><span class="px-2 text-primary-500">&middot;</span><span>355 words</span>
   
 
   
@@ -628,21 +628,21 @@
         <div class="article-content max-w-prose mb-20">
           
 
-<h2 class="relative group">前言 🎤 
-    <div id="%E5%89%8D%E8%A8%80-" class="anchor"></div>
+<h2 class="relative group">🎤 前言 
+    <div id="-%E5%89%8D%E8%A8%80" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E5%89%8D%E8%A8%80-" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#-%E5%89%8D%E8%A8%80" aria-label="Anchor">#</a>
     </span>        
     
 </h2>
-<p>在做我的第一個專案時，我們最初用 Notion 當 API 文件，剛開始寫 API 時還會乖乖更新文檔📄，但隨著 API 越寫越多，更新文檔的事情就逐漸被拋諸腦後😅。</p>
-<p>而且在前後端分離的情況下，負責前端的組員常常對測試 API 一頭霧水🤔。這時，我靈光一閃，想起老師課堂上提到的超好用圖形化工具✨——Swagger！於是，我開始鑽研如何把 Swagger 引入專案，讓 API 文件和測試一舉搞定🎯！</p>
+<p>嗨～今天我們來聊聊如何用 Firebase Admin SDK 打造一個能保護後端 API 的身份驗證中間件！🎉
+不用擔心，這篇教學絕對超簡單，只要跟著步驟操作，保證你可以順利完成！( •̀ ω •́ )✧</p>
 
 
-<h2 class="relative group">📌 前置作業 
+<h2 class="relative group">🍀 前置作業 
     <div id="-%E5%89%8D%E7%BD%AE%E4%BD%9C%E6%A5%AD" class="anchor"></div>
     
     <span
@@ -652,57 +652,17 @@
     </span>        
     
 </h2>
-<p>需要用到兩個套件 <code>swagger-ui-express</code> &amp; <code>swagger-autogen</code></p>
+<ol>
+<li>Node.js：確保安裝了最新版本！</li>
+<li>Firebase 專案：前往 Firebase 控制台 創建專案，並下載服務帳戶密鑰 JSON 文件～</li>
+<li>安裝依賴：先用以下指令安裝需要的 npm 包：
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">npm install dotenv firebase-admin
+</span></span></code></pre></div></li>
+</ol>
+<p>準備完成了嗎？那我們開始吧！ヾ(≧▽≦*)o</p>
 
 
-<h3 class="relative group">1. swagger-ui-express 
-    <div id="1-swagger-ui-express" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#1-swagger-ui-express" aria-label="Anchor">#</a>
-    </span>        
-    
-</h3>
-<blockquote>
-<p>傳送門 🌀 <a href="https://www.npmjs.com/package/swagger-ui-express" target="_blank">swagger-ui-express</a></p>
-</blockquote>
-<p><strong>什麼是 swagger-ui-express？🖥️</strong></p>
-<p>swagger-ui-express 是一個方便易用的 Express 中介軟體，讓你輕鬆整合 Swagger UI 到你的 Express 應用程式中！✨ 它可以將你的 Swagger 文件以一個互動式的圖形介面展示出來，供開發者進行查閱和測試，徹底解決 API 文件難管理、難測試的痛點💡。</p>
-<p><strong>為什麼選它？</strong></p>
-<ul>
-<li>快速整合：幾行程式碼就能把 Swagger UI 加入專案🔧。</li>
-<li>互動式測試：支援直接從瀏覽器發送請求測試 API 功能🚀。</li>
-<li>開發者友好：讓團隊中的每個人（不只後端開發者！）都能方便理解和使用 API📖。</li>
-</ul>
-
-
-<h3 class="relative group">2. swagger-autogen 
-    <div id="2-swagger-autogen" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#2-swagger-autogen" aria-label="Anchor">#</a>
-    </span>        
-    
-</h3>
-<blockquote>
-<p>傳送門 🌀 <a href="https://www.npmjs.com/package/swagger-autogen" target="_blank">swagger-autogen</a>
-官方文檔 📄 <a href="https://swagger-autogen.github.io/docs/getting-started/quick-start/" target="_blank">Quick Start</a></p>
-</blockquote>
-<p><strong>什麼是 swagger-autogen？✨</strong></p>
-<p>swagger-autogen 是一個專為開發者設計的工具包，可以自動生成符合 Swagger 規範的 API 文件📄！只需撰寫簡單的註解，它就能快速掃描你的程式碼，幫助你生成完整的 Swagger 文件，還能直接與 Swagger UI 整合，讓 API 文件不僅即時更新，還可以用於互動式測試🚀。</p>
-<p><strong>為什麼選擇它？</strong></p>
-<ul>
-<li>省時省力：免手動撰寫 JSON 格式的 API 文件。</li>
-<li>高度自動化：從程式碼註解中自動提取路由資訊📌。</li>
-<li>即時測試：結合 Swagger UI，讓 API 測試變得超方便🔧。</li>
-</ul>
-
-
-<h2 class="relative group">🖥️ 實際操作 
+<h2 class="relative group">🔑 實際操作 
     <div id="-%E5%AF%A6%E9%9A%9B%E6%93%8D%E4%BD%9C" class="anchor"></div>
     
     <span
@@ -714,173 +674,211 @@
 </h2>
 
 
-<h3 class="relative group">1. 安裝套件至你的 express 專案 
-    <div id="1-%E5%AE%89%E8%A3%9D%E5%A5%97%E4%BB%B6%E8%87%B3%E4%BD%A0%E7%9A%84-express-%E5%B0%88%E6%A1%88" class="anchor"></div>
+<h3 class="relative group">🌟 步驟一：配置 Firebase Admin SDK 
+    <div id="-%E6%AD%A5%E9%A9%9F%E4%B8%80%E9%85%8D%E7%BD%AE-firebase-admin-sdk" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#1-%E5%AE%89%E8%A3%9D%E5%A5%97%E4%BB%B6%E8%87%B3%E4%BD%A0%E7%9A%84-express-%E5%B0%88%E6%A1%88" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#-%E6%AD%A5%E9%A9%9F%E4%B8%80%E9%85%8D%E7%BD%AE-firebase-admin-sdk" aria-label="Anchor">#</a>
     </span>        
     
 </h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">npm install swagger-ui-express
-</span></span><span class="line"><span class="cl">npm install swagger-autogen
-</span></span></code></pre></div>
-
-<h3 class="relative group">2. 設定 Swagger 自動生成檔案 
-    <div id="2-%E8%A8%AD%E5%AE%9A-swagger-%E8%87%AA%E5%8B%95%E7%94%9F%E6%88%90%E6%AA%94%E6%A1%88" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#2-%E8%A8%AD%E5%AE%9A-swagger-%E8%87%AA%E5%8B%95%E7%94%9F%E6%88%90%E6%AA%94%E6%A1%88" aria-label="Anchor">#</a>
-    </span>        
-    
-</h3>
-<p>在專案根目錄中，建立一個 <code>swagger.js</code> 檔案，設定 swagger-autogen 來生成 Swagger 文件。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">swaggerAutogen</span> <span class="nx">from</span> <span class="s2">&#34;swagger-autogen&#34;</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">doc</span> <span class="o">=</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">info</span><span class="o">:</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="nx">title</span><span class="o">:</span> <span class="s2">&#34;我的 API 寶庫&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nx">description</span><span class="o">:</span> <span class="s2">&#34;我把所有的 API 都放在 localhost:3030 了，去尋找吧！&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">  <span class="p">},</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">host</span><span class="o">:</span> <span class="s2">&#34;localhost:3030&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl"><span class="p">};</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">outputFile</span> <span class="o">=</span> <span class="s2">&#34;./swagger-output.json&#34;</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">routes</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;./app.js&#34;</span><span class="p">];</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nx">swaggerAutogen</span><span class="p">()(</span><span class="nx">outputFile</span><span class="p">,</span> <span class="nx">routes</span><span class="p">,</span> <span class="nx">doc</span><span class="p">);</span>
-</span></span></code></pre></div><p><code>require</code> 的寫法只要把 <code>import</code> 換掉就好，剩下相同</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"> <span class="kr">const</span> <span class="nx">swaggerAutogen</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;swagger-autogen&#39;</span><span class="p">)();</span>
-</span></span></code></pre></div><p>執行它，一鍵生成 swagger-output.json！✨</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">node swagger.js
-</span></span></code></pre></div>
-
-<h3 class="relative group">3. 整合 Swagger UI 到 Express 專案 
-    <div id="3-%E6%95%B4%E5%90%88-swagger-ui-%E5%88%B0-express-%E5%B0%88%E6%A1%88" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#3-%E6%95%B4%E5%90%88-swagger-ui-%E5%88%B0-express-%E5%B0%88%E6%A1%88" aria-label="Anchor">#</a>
-    </span>        
-    
-</h3>
-<p>在 app.js 中加入以下程式碼：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">express</span> <span class="nx">from</span> <span class="s2">&#34;express&#34;</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">express</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">// swagger
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">import</span> <span class="nx">swaggerUi</span> <span class="nx">from</span> <span class="s2">&#34;swagger-ui-express&#34;</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">fs</span> <span class="nx">from</span> <span class="s2">&#34;fs&#34;</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">swaggerDocument</span> <span class="o">=</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">fs</span><span class="p">.</span><span class="nx">readFileSync</span><span class="p">(</span><span class="k">new</span> <span class="nx">URL</span><span class="p">(</span><span class="s2">&#34;./swagger-output.json&#34;</span><span class="p">,</span> <span class="kr">import</span><span class="p">.</span><span class="nx">meta</span><span class="p">.</span><span class="nx">url</span><span class="p">),</span> <span class="s2">&#34;utf-8&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="nx">app</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="s2">&#34;/api-docs&#34;</span><span class="p">,</span> <span class="nx">swaggerUi</span><span class="p">.</span><span class="nx">serve</span><span class="p">,</span> <span class="nx">swaggerUi</span><span class="p">.</span><span class="nx">setup</span><span class="p">(</span><span class="nx">swaggerDocument</span><span class="p">));</span>
-</span></span></code></pre></div><p>如果不是使用 ES6 則是加入：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">express</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;express&#39;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">express</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">// swagger
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">swaggerUi</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;swagger-ui-express&#39;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">swaggerFile</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;./swagger-output.json&#39;</span><span class="p">);</span> <span class="c1">// 引入剛生成的 JSON 文件
+<p>在 <code>firebase.js</code> 文件中配置 Firebase Admin SDK，用於初始化身份驗證服務。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="c1">// src/config/firebase.js
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>
-</span></span><span class="line"><span class="cl"><span class="nx">app</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="s1">&#39;/api-docs&#39;</span><span class="p">,</span> <span class="nx">swaggerUi</span><span class="p">.</span><span class="nx">serve</span><span class="p">,</span> <span class="nx">swaggerUi</span><span class="p">.</span><span class="nx">setup</span><span class="p">(</span><span class="nx">swaggerFile</span><span class="p">));</span> <span class="c1">// 路徑可自訂，例如 /docs
-</span></span></span></code></pre></div><p>伺服器啟動後，打開瀏覽器，輸入 <code>http://localhost:3000/api-docs</code> 你的互動式 API 文件就此誕生啦！🎉</p>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">initializeApp</span><span class="p">,</span> <span class="nx">cert</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&#34;firebase-admin/app&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">getAuth</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&#34;firebase-admin/auth&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="o">*</span> <span class="nx">as</span> <span class="nx">dotenv</span> <span class="nx">from</span> <span class="s2">&#34;dotenv&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"> <span class="c1">// 載入環境變數
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">dotenv</span><span class="p">.</span><span class="nx">config</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 初始化 Firebase Admin SDK
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">initializeApp</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">credential</span><span class="o">:</span> <span class="nx">cert</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">projectId</span><span class="o">:</span> <span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">FIREBASE_PROJECT_ID</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">clientEmail</span><span class="o">:</span> <span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">FIREBASE_CLIENT_EMAIL</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">privateKey</span><span class="o">:</span> <span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">FIREBASE_PRIVATE_KEY</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/\\n/g</span><span class="p">,</span> <span class="s2">&#34;\n&#34;</span><span class="p">),</span> <span class="c1">// 處理多行密鑰整合為一行
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">}),</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">export</span> <span class="kr">const</span> <span class="nx">auth</span> <span class="o">=</span> <span class="nx">getAuth</span><span class="p">();</span>
+</span></span></code></pre></div>
 
-
-<h3 class="relative group">4. 在路由中加入註解 📜 
-    <div id="4-%E5%9C%A8%E8%B7%AF%E7%94%B1%E4%B8%AD%E5%8A%A0%E5%85%A5%E8%A8%BB%E8%A7%A3-" class="anchor"></div>
+<h4 class="relative group">🌟 小提醒： 
+    <div id="-%E5%B0%8F%E6%8F%90%E9%86%92" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#4-%E5%9C%A8%E8%B7%AF%E7%94%B1%E4%B8%AD%E5%8A%A0%E5%85%A5%E8%A8%BB%E8%A7%A3-" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#-%E5%B0%8F%E6%8F%90%E9%86%92" aria-label="Anchor">#</a>
     </span>        
     
-</h3>
-<p>為了讓 swagger-autogen 能正確提取 API 資訊，會需要在路由檔案中撰寫註解，例如：</p>
+</h4>
 <ul>
-<li><strong>GET</strong>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">router</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span>
-</span></span><span class="line"><span class="cl">  <span class="s2">&#34;/:userId&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">  <span class="cm">/* #swagger.tags = [&#39;Cart&#39;] */</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  <span class="cm">/* #swagger.description = &#34;取得購物車所有商品資料&#34; */</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  <span class="cm">/* #swagger.responses[200] = { 
-</span></span></span><span class="line"><span class="cl"><span class="cm">      schema: {
-</span></span></span><span class="line"><span class="cl"><span class="cm">        &#34;status&#34;: 200,
-</span></span></span><span class="line"><span class="cl"><span class="cm">        &#34;message&#34;: &#34;購物車成功取得資料&#34;,
-</span></span></span><span class="line"><span class="cl"><span class="cm">        &#34;data&#34;: {
-</span></span></span><span class="line"><span class="cl"><span class="cm">            &#34;cartItems&#34;: [
-</span></span></span><span class="line"><span class="cl"><span class="cm">                {
-</span></span></span><span class="line"><span class="cl"><span class="cm">                    &#34;id&#34;: 115,
-</span></span></span><span class="line"><span class="cl"><span class="cm">                    &#34;cart_id&#34;: 5,
-</span></span></span><span class="line"><span class="cl"><span class="cm">                    &#34;created_at&#34;: &#34;2025-01-01T04:57:32.661Z&#34;,
-</span></span></span><span class="line"><span class="cl"><span class="cm">                    &#34;is_selected&#34;: false,
-</span></span></span><span class="line"><span class="cl"><span class="cm">
-</span></span></span><span class="line"><span class="cl"><span class="cm">    },
-</span></span></span><span class="line"><span class="cl"><span class="cm">        description: &#34;成功取得資料&#34; } */</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  <span class="nx">CartController</span><span class="p">.</span><span class="nx">fetchCartByUserId</span>
-</span></span><span class="line"><span class="cl"><span class="p">);</span>
-</span></span></code></pre></div></li>
-<li><strong>POST</strong>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">router</span><span class="p">.</span><span class="nx">post</span><span class="p">(</span>
-</span></span><span class="line"><span class="cl"><span class="s2">&#34;/:userId&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">  <span class="cm">/* #swagger.tags = [&#39;Cart&#39;] */</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  <span class="cm">/* #swagger.description = &#34;新增商品至購物車&#34; */</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  <span class="cm">/*	#swagger.parameters[&#39;obj&#39;] = {
-</span></span></span><span class="line"><span class="cl"><span class="cm">            in: &#39;body&#39;,
-</span></span></span><span class="line"><span class="cl"><span class="cm">            description: &#39;新增商品&#39;,
-</span></span></span><span class="line"><span class="cl"><span class="cm">            required: true,
-</span></span></span><span class="line"><span class="cl"><span class="cm">            schema: {
-</span></span></span><span class="line"><span class="cl"><span class="cm">              &#34;activityId&#34;: 34
-</span></span></span><span class="line"><span class="cl"><span class="cm">            }
-</span></span></span><span class="line"><span class="cl"><span class="cm">    } */</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  <span class="cm">/* #swagger.responses[201] = {
-</span></span></span><span class="line"><span class="cl"><span class="cm">      schema: {
-</span></span></span><span class="line"><span class="cl"><span class="cm">        &#34;status&#34;: 201,
-</span></span></span><span class="line"><span class="cl"><span class="cm">        &#34;message&#34;: &#34;成功新增至購物車&#34;,
-</span></span></span><span class="line"><span class="cl"><span class="cm">        &#34;data&#34;: {
-</span></span></span><span class="line"><span class="cl"><span class="cm">            &#34;id&#34;: 115,
-</span></span></span><span class="line"><span class="cl"><span class="cm">            &#34;cart_id&#34;: 5,
-</span></span></span><span class="line"><span class="cl"><span class="cm">            &#34;activity_id&#34;: 34,
-</span></span></span><span class="line"><span class="cl"><span class="cm">            &#34;created_at&#34;: &#34;2025-01-01T04:57:32.661Z&#34;,
-</span></span></span><span class="line"><span class="cl"><span class="cm">            &#34;is_selected&#34;: false
-</span></span></span><span class="line"><span class="cl"><span class="cm">        }
-</span></span></span><span class="line"><span class="cl"><span class="cm">    },
-</span></span></span><span class="line"><span class="cl"><span class="cm">        description: &#34;成功新增至購物車&#34; } */</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">  <span class="nx">CartController</span><span class="p">.</span><span class="nx">addActivityToCart</span>
-</span></span><span class="line"><span class="cl"><span class="p">);</span>
-</span></span></code></pre></div></li>
+<li>使用 <code>dotenv</code> 管理環境變數，可以更安全地保存敏感信息！</li>
+<li><code>replace(/\\n/g, &quot;\n&quot;)</code> 是為了解決 JSON 格式中多行私鑰的問題，千萬別忘了這步喔！( ˘▽˘)っ</li>
 </ul>
-<p>註釋規範與格式可以前往作者的 GitHub 上參閱範例</p>
-<blockquote>
-<p>範例 📚 <a href="https://github.com/davibaltar/example-swagger-autogen-with-router" target="_blank">Advanced Example</a></p>
-</blockquote>
 
 
-<h3 class="relative group">5. 更新文件並測試 🔄 
-    <div id="5-%E6%9B%B4%E6%96%B0%E6%96%87%E4%BB%B6%E4%B8%A6%E6%B8%AC%E8%A9%A6-" class="anchor"></div>
+<h3 class="relative group">📂 步驟二：自動生成 .env 文件 
+    <div id="-%E6%AD%A5%E9%A9%9F%E4%BA%8C%E8%87%AA%E5%8B%95%E7%94%9F%E6%88%90-env-%E6%96%87%E4%BB%B6" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#5-%E6%9B%B4%E6%96%B0%E6%96%87%E4%BB%B6%E4%B8%A6%E6%B8%AC%E8%A9%A6-" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#-%E6%AD%A5%E9%A9%9F%E4%BA%8C%E8%87%AA%E5%8B%95%E7%94%9F%E6%88%90-env-%E6%96%87%E4%BB%B6" aria-label="Anchor">#</a>
     </span>        
     
 </h3>
-<p>每次更新 API 或新增路由時，只需重新執行 node swagger.js，就能生成最新的 Swagger 文件！接著在 /api-docs 路徑中進行互動式測試，快速驗證 API 功能是否正常運作🚀。</p>
+<p>接下來，我們寫個小工具，實現自動生成 .env 文件，超方便！✨</p>
+
+
+<h4 class="relative group">建立生成腳本 
+    <div id="%E5%BB%BA%E7%AB%8B%E7%94%9F%E6%88%90%E8%85%B3%E6%9C%AC" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E5%BB%BA%E7%AB%8B%E7%94%9F%E6%88%90%E8%85%B3%E6%9C%AC" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>新增 <code>generate-env.js</code>，內容如下：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">fs</span> <span class="nx">from</span> <span class="s2">&#34;fs&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">path</span> <span class="nx">from</span> <span class="s2">&#34;path&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 指定 Firebase JSON 檔案的路徑
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">filePath</span> <span class="o">=</span> <span class="nx">path</span><span class="p">.</span><span class="nx">resolve</span><span class="p">(</span><span class="s2">&#34;./src/config/你的-firebase-key.json&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">keyFile</span> <span class="o">=</span> <span class="nx">fs</span><span class="p">.</span><span class="nx">readFileSync</span><span class="p">(</span><span class="nx">filePath</span><span class="p">,</span> <span class="s2">&#34;utf8&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">keyData</span> <span class="o">=</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">keyFile</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 格式化 private_key
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">formattedPrivateKey</span> <span class="o">=</span> <span class="nx">keyData</span><span class="p">.</span><span class="nx">private_key</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/\n/g</span><span class="p">,</span> <span class="s2">&#34;\\n&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 生成 .env 文件內容
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">envFilePath</span> <span class="o">=</span> <span class="nx">path</span><span class="p">.</span><span class="nx">resolve</span><span class="p">(</span><span class="s2">&#34;./.env&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">envContent</span> <span class="o">=</span> <span class="sb">`FIREBASE_PROJECT_ID=</span><span class="si">${</span><span class="nx">keyData</span><span class="p">.</span><span class="nx">project_id</span><span class="si">}</span><span class="sb">\nFIREBASE_CLIENT_EMAIL=</span><span class="si">${</span><span class="nx">keyData</span><span class="p">.</span><span class="nx">client_email</span><span class="si">}</span><span class="sb">\nFIREBASE_PRIVATE_KEY=&#34;</span><span class="si">${</span><span class="nx">formattedPrivateKey</span><span class="si">}</span><span class="sb">&#34;\n`</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 寫入 .env 文件
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">fs</span><span class="p">.</span><span class="nx">writeFileSync</span><span class="p">(</span><span class="nx">envFilePath</span><span class="p">,</span> <span class="nx">envContent</span><span class="p">,</span> <span class="s2">&#34;utf8&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;.env 文件生成完成！🎉&#34;</span><span class="p">);</span>
+</span></span></code></pre></div>
+
+<h4 class="relative group">執行腳本 
+    <div id="%E5%9F%B7%E8%A1%8C%E8%85%B3%E6%9C%AC" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E5%9F%B7%E8%A1%8C%E8%85%B3%E6%9C%AC" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">node generate-env.js
+</span></span></code></pre></div><p>這樣就會在專案目錄中生成一個 .env 文件，裡面會包含 Firebase 的必要配置喔！٩(ˊᗜˋ*)و</p>
+
+
+<h3 class="relative group">🛡️ 步驟三：建立身份驗證中間件 
+    <div id="-%E6%AD%A5%E9%A9%9F%E4%B8%89%E5%BB%BA%E7%AB%8B%E8%BA%AB%E4%BB%BD%E9%A9%97%E8%AD%89%E4%B8%AD%E9%96%93%E4%BB%B6" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#-%E6%AD%A5%E9%A9%9F%E4%B8%89%E5%BB%BA%E7%AB%8B%E8%BA%AB%E4%BB%BD%E9%A9%97%E8%AD%89%E4%B8%AD%E9%96%93%E4%BB%B6" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>在 <code>authMiddleware.js</code> 中新增以下代碼，來實現身份驗證：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="c1">// middlewares/authMiddleware.js
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">auth</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&#34;../config/firebase.js&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">export</span> <span class="kr">const</span> <span class="nx">authMiddleware</span> <span class="o">=</span> <span class="kr">async</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">,</span> <span class="nx">next</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">authHeader</span> <span class="o">=</span> <span class="nx">req</span><span class="p">.</span><span class="nx">headers</span><span class="p">.</span><span class="nx">authorization</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">authHeader</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nx">res</span><span class="p">.</span><span class="nx">status</span><span class="p">(</span><span class="mi">403</span><span class="p">).</span><span class="nx">json</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">status</span><span class="o">:</span> <span class="mi">403</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">message</span><span class="o">:</span> <span class="s2">&#34;沒有提供 Authorization header&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="p">});</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">idToken</span> <span class="o">=</span> <span class="nx">authHeader</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s2">&#34; &#34;</span><span class="p">)[</span><span class="mi">1</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">idToken</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nx">res</span><span class="p">.</span><span class="nx">status</span><span class="p">(</span><span class="mi">403</span><span class="p">).</span><span class="nx">json</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">status</span><span class="o">:</span> <span class="mi">403</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">message</span><span class="o">:</span> <span class="s2">&#34;沒有提供 id token&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="p">});</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">try</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">decodedToken</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">auth</span><span class="p">.</span><span class="nx">verifyIdToken</span><span class="p">(</span><span class="nx">idToken</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">req</span><span class="p">.</span><span class="nx">user</span> <span class="o">=</span> <span class="nx">decodedToken</span><span class="p">;</span> <span class="c1">// 保存用戶信息
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">next</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">res</span><span class="p">.</span><span class="nx">status</span><span class="p">(</span><span class="mi">403</span><span class="p">).</span><span class="nx">json</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">status</span><span class="o">:</span> <span class="mi">403</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">message</span><span class="o">:</span> <span class="s2">&#34;無效的憑證&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">error</span><span class="o">:</span> <span class="nx">err</span><span class="p">.</span><span class="nx">message</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="p">});</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span></code></pre></div><p>這樣的中間件會幫你驗證每個請求的 Token，確保只有有效用戶可以訪問受保護的路由～( •̀ ω •́ )✧</p>
+
+
+<h3 class="relative group">🚀 步驟四：在 Express 中使用中間件 
+    <div id="-%E6%AD%A5%E9%A9%9F%E5%9B%9B%E5%9C%A8-express-%E4%B8%AD%E4%BD%BF%E7%94%A8%E4%B8%AD%E9%96%93%E4%BB%B6" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#-%E6%AD%A5%E9%A9%9F%E5%9B%9B%E5%9C%A8-express-%E4%B8%AD%E4%BD%BF%E7%94%A8%E4%B8%AD%E9%96%93%E4%BB%B6" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>在主伺服器檔案中（例如 index.js），加上中間件來保護路由：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">import</span> <span class="nx">express</span> <span class="nx">from</span> <span class="s2">&#34;express&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">authMiddleware</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&#34;./middlewares/authMiddleware.js&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">express</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="nx">app</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">express</span><span class="p">.</span><span class="nx">json</span><span class="p">());</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 受保護的路由
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">app</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s2">&#34;/protected&#34;</span><span class="p">,</span> <span class="nx">authMiddleware</span><span class="p">,</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">res</span><span class="p">.</span><span class="nx">status</span><span class="p">(</span><span class="mi">200</span><span class="p">).</span><span class="nx">json</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">status</span><span class="o">:</span> <span class="mi">200</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">message</span><span class="o">:</span> <span class="s2">&#34;成功訪問受保護的路由！&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">user</span><span class="o">:</span> <span class="nx">req</span><span class="p">.</span><span class="nx">user</span><span class="p">,</span> <span class="c1">// 用戶信息
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">});</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 啟動伺服器
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">app</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="mi">3000</span><span class="p">,</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;伺服器已啟動！請訪問 http://localhost:3000 🚀&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span></code></pre></div><p>試試看吧！🎉 用 Postman 或其他工具，向 /protected 發送帶有 Firebase Token 的請求，應該會看到回傳的用戶信息！(≧∀≦)ゞ</p>
+
+
+<h2 class="relative group">🎉 結語 
+    <div id="-%E7%B5%90%E8%AA%9E" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#-%E7%B5%90%E8%AA%9E" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>現在我們已經成功學會如何：</p>
+<ol>
+<li>初始化 Firebase Admin SDK</li>
+<li>自動生成 .env 文件</li>
+<li>實現身份驗證中間件</li>
+<li>在 Express 中保護路由</li>
+</ol>
+<p>是不是很簡單呢？(｡･∀･)ﾉﾞ 如果你覺得這篇教學對你有幫助，別忘了分享給更多需要的人喔！🚀</p>
+<p>一起打造更安全、更強大的後端吧～！ヾ(≧▽≦*)o</p>
 
           
           
@@ -903,8 +901,8 @@
           
         
       <script>
-        var oid = "views_posts\/set_swagger.md"
-        var oid_likes = "likes_posts\/set_swagger.md"
+        var oid = "views_posts\/set_Firebase_authMiddleware.md"
+        var oid_likes = "likes_posts\/set_Firebase_authMiddleware.md"
       </script>
       
       
@@ -924,7 +922,7 @@
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex group mr-3" href="/posts/set_theme/">
+            <a class="flex group mr-3" href="/posts/set_naive_usemessage/">
               <span
                 class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
                 >&larr;</span
@@ -936,11 +934,11 @@
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >使用 Git 安裝並設置 Hugo 主題 🛠️</span
+                  >用 Naive UI 的 useMessage 打造更友好的使用者操作體驗 🎉</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2025-01-03T18:59:35&#43;08:00">3 January 2025</time>
+                    <time datetime="2025-01-07T15:55:04&#43;08:00">7 January 2025</time>
                   
                 </span>
               </span>
@@ -948,28 +946,6 @@
           
         </span>
         <span>
-          
-            <a class="flex text-right group ml-3" href="/posts/set_firebase_authentication/">
-              <span class="flex flex-col">
-                <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >Firebase Authentication 教學：讓使用者登入變得輕而易舉 🔐</span
-                >
-                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
-                  
-                    <time datetime="2025-01-06T15:49:55&#43;08:00">6 January 2025</time>
-                  
-                </span>
-              </span>
-              <span
-                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
-                >&rarr;</span
-              >
-              <span
-                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
-                >&larr;</span
-              >
-            </a>
           
         </span>
       </div>

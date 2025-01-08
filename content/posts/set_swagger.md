@@ -9,7 +9,7 @@ title: '為 Express 專案打造互動式 Swagger API 文檔 🌐'
 而且在前後端分離的情況下，負責前端的組員常常對測試 API 一頭霧水🤔。這時，我靈光一閃，想起老師課堂上提到的超好用圖形化工具✨——Swagger！於是，我開始鑽研如何把 Swagger 引入專案，讓 API 文件和測試一舉搞定🎯！
 
 
-## 前置作業 📌
+## 📌 前置作業 
 
 需要用到兩個套件 `swagger-ui-express` & `swagger-autogen`
 ### 1. swagger-ui-express 
@@ -41,7 +41,7 @@ swagger-autogen 是一個專為開發者設計的工具包，可以自動生成�
 - 高度自動化：從程式碼註解中自動提取路由資訊📌。
 - 即時測試：結合 Swagger UI，讓 API 測試變得超方便🔧。
 
-## 實際操作 🖥️
+## 🖥️ 實際操作 
 ### 1. 安裝套件至你的 express 專案
 ```bash
 npm install swagger-ui-express

@@ -4,13 +4,19 @@
 
   <url>
     <loc>https://warmlatte.github.io/</loc>
-    <lastmod>2025-01-07T15:55:04+08:00</lastmod>
+    <lastmod>2025-01-08T23:05:38+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://warmlatte.github.io/posts/</loc>
-    <lastmod>2025-01-07T15:55:04+08:00</lastmod>
+    <lastmod>2025-01-08T23:05:38+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://warmlatte.github.io/posts/set_firebase_authmiddleware/</loc>
+    <lastmod>2025-01-08T23:05:38+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>

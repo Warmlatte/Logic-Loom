@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="scroll-smooth" data-default-appearance="dark"
-  data-auto-appearance="true"><head>
+  data-auto-appearance="true"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
   
   <meta http-equiv="content-language" content="en" />
@@ -15,7 +15,7 @@
   
   
   
-  <link rel="canonical" href="https://warmlatte.github.io/posts/set_firebase_authentication/" />
+  <link rel="canonical" href="http://localhost:1313/posts/set_firebase_authentication/" />
   
   
   
@@ -67,7 +67,7 @@
   
   
   
-  <meta property="og:url" content="https://warmlatte.github.io/posts/set_firebase_authentication/">
+  <meta property="og:url" content="http://localhost:1313/posts/set_firebase_authentication/">
   <meta property="og:site_name" content="Logic Loom 🧠🕸️">
   <meta property="og:title" content="Firebase Authentication 教學：讓使用者登入變得輕而易舉 🔐">
   <meta property="og:locale" content="en">
@@ -91,7 +91,7 @@
     
     
     "inLanguage": "en",
-    "url" : "https:\/\/warmlatte.github.io\/posts\/set_firebase_authentication\/",
+    "url" : "http:\/\/localhost:1313\/posts\/set_firebase_authentication\/",
     "author" : {
       "@type": "Person",
       "name": "Latte"
@@ -116,7 +116,7 @@
   
   
   
-  <link href="https://joitogether-production.up.railway.app/home" rel="me" />
+  <link href="https://joitogether.com/home" rel="me" />
   
   
   <link href="https://discord.gg/CKUXRD2m" rel="me" />
@@ -547,7 +547,7 @@
       
         <a
           class="px-1 hover:text-primary-700 dark:hover:text-primary-400"
-          href="https://joitogether-production.up.railway.app/home"
+          href="https://joitogether.com/home"
           target="_blank"
           aria-label="Link"
           rel="me noopener noreferrer"
@@ -628,13 +628,13 @@
         <div class="article-content max-w-prose mb-20">
           
 
-<h2 class="relative group">前言 🎤 
-    <div id="%E5%89%8D%E8%A8%80-" class="anchor"></div>
+<h2 class="relative group">🎤 前言 
+    <div id="-%E5%89%8D%E8%A8%80" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E5%89%8D%E8%A8%80-" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#-%E5%89%8D%E8%A8%80" aria-label="Anchor">#</a>
     </span>        
     
 </h2>
@@ -642,13 +642,13 @@
 <p>今天就帶大家一步步實現這些功能，並在下一篇文章搭配 Naive UI 信息彈窗 提升使用者體驗，讓操作更加直覺、友好！✨（¯▿¯）</p>
 
 
-<h2 class="relative group">前置作業 📌 
-    <div id="%E5%89%8D%E7%BD%AE%E4%BD%9C%E6%A5%AD-" class="anchor"></div>
+<h2 class="relative group">📌 前置作業 
+    <div id="-%E5%89%8D%E7%BD%AE%E4%BD%9C%E6%A5%AD" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E5%89%8D%E7%BD%AE%E4%BD%9C%E6%A5%AD-" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#-%E5%89%8D%E7%BD%AE%E4%BD%9C%E6%A5%AD" aria-label="Anchor">#</a>
     </span>        
     
 </h2>
@@ -720,13 +720,13 @@
 </span></span><span class="line"><span class="cl"><span class="kr">export</span> <span class="k">default</span> <span class="nx">app</span><span class="p">;</span>
 </span></span></code></pre></div>
 
-<h2 class="relative group">實際操作 🖥️ 
-    <div id="%E5%AF%A6%E9%9A%9B%E6%93%8D%E4%BD%9C-" class="anchor"></div>
+<h2 class="relative group">🖥️ 實際操作 
+    <div id="-%E5%AF%A6%E9%9A%9B%E6%93%8D%E4%BD%9C" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E5%AF%A6%E9%9A%9B%E6%93%8D%E4%BD%9C-" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#-%E5%AF%A6%E9%9A%9B%E6%93%8D%E4%BD%9C" aria-label="Anchor">#</a>
     </span>        
     
 </h2>
@@ -884,13 +884,13 @@
 </span></span><span class="line"><span class="cl"><span class="p">};</span>
 </span></span></code></pre></div>
 
-<h2 class="relative group">測試與驗證 🔄 
-    <div id="%E6%B8%AC%E8%A9%A6%E8%88%87%E9%A9%97%E8%AD%89-" class="anchor"></div>
+<h2 class="relative group">🔄 測試與驗證 
+    <div id="-%E6%B8%AC%E8%A9%A6%E8%88%87%E9%A9%97%E8%AD%89" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E6%B8%AC%E8%A9%A6%E8%88%87%E9%A9%97%E8%AD%89-" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#-%E6%B8%AC%E8%A9%A6%E8%88%87%E9%A9%97%E8%AD%89" aria-label="Anchor">#</a>
     </span>        
     
 </h2>
@@ -903,23 +903,23 @@
 </ol>
 
 
-<h2 class="relative group">注意事項 ⚠️ 
-    <div id="%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A0%85-" class="anchor"></div>
+<h2 class="relative group">⚠️ 注意事項 
+    <div id="-%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A0%85" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A0%85-" aria-label="Anchor">#</a>
+            style="text-decoration-line: none !important;" href="#-%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A0%85" aria-label="Anchor">#</a>
     </span>        
     
 </h2>
 <ol>
 <li>
-<p>Facebook 第三方登入
+<p><strong>Facebook 第三方登入</strong>
 由於 Facebook 最近的政策調整，對於個人商家變得不太友善，所以這次教學沒有包含串接 Facebook 登入的部分。如果你還是希望使用 Facebook 第三方登入，建議先仔細評估需求，並多多留意相關政策變更喔！💡</p>
 </li>
 <li>
-<p>Firebase 驗證限制
+<p><strong>Firebase 驗證限制</strong>
 Firebase 的驗證目前僅支援 同裝置間的操作，也就是：</p>
 <ul>
 <li>如果在手機上接收驗證信，就必須在同一台手機上完成驗證。</li>
@@ -1092,7 +1092,7 @@ Firebase 的驗證目前僅支援 同裝置間的操作，也就是：</p>
 <div
   id="search-wrapper"
   class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
-  data-url="https://warmlatte.github.io/"
+  data-url="http://localhost:1313/"
   style="z-index:500"
 >
   <div

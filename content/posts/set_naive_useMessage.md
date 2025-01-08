@@ -3,19 +3,19 @@ date: '2025-01-07T15:55:04+08:00'
 draft: false
 title: '用 Naive UI 的 useMessage 打造更友好的使用者操作體驗 🎉'
 ---
-## 前言 🎤
+## 🎤 前言 
 
 使用者體驗（User Experience, UX）是應用程式設計中不可或缺的一環，而一個即時、直觀的反饋能夠讓使用者更安心、更愉快地操作✨。在這篇文章中，我們將介紹如何使用 Naive UI 提供的 useMessage，為操作增加提示彈窗，讓你的專案從「好用」變成「超好用」！(ゝ∀･)
 
 
-## 搭配 useMessage 的優勢 💡
+## 💡 搭配 useMessage 的優勢 
 > 傳送門 🌀 [Naive UI Message](https://www.naiveui.com/zh-CN/os-theme/components/message )
 
 1. 即時反饋：讓使用者在操作後即刻獲得成功或失敗的回應。
 2. 更友好的提示：以視覺化的彈窗代替冷冰冰的 console.log。
 3. 簡單易用：只需一行程式碼，即可實現漂亮的提示彈窗。
 
-## 使用步驟 🖥️
+##  🖥️ 使用步驟
 
 ### 1. 安裝 Naive UI
 如果你的專案還沒有安裝 Naive UI，請先執行以下指令：
@@ -231,5 +231,5 @@ const handleLogout = async () => {
 </script>
 ```
 
-## 結語 🎉
+## 🎉 結語 
 透過 Naive UI 的 useMessage，你可以輕鬆為使用者操作提供即時反饋，提升整體操作體驗。結合 Firebase Authentication，讓你的專案更友好、更專業！快來試試看吧！🚀

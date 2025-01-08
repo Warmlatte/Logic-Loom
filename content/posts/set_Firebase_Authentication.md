@@ -3,12 +3,12 @@ date: '2025-01-06T15:49:55+08:00'
 draft: false
 title: 'Firebase Authentication 教學：讓使用者登入變得輕而易舉 🔐'
 ---
-## 前言 🎤
+## 🎤 前言 
 在應用程式中，使用者驗證是不可缺的一環，而 Firebase Authentication 就像是開發者的魔法工具箱🪄！不僅可以快速實現 Email/密碼登入，還支援第三方登入（Google、Facebook 等），更貼心的是，它還內建了 忘記密碼 功能💡！
 
 今天就帶大家一步步實現這些功能，並在下一篇文章搭配 Naive UI 信息彈窗 提升使用者體驗，讓操作更加直覺、友好！✨（¯▿¯）
 
-## 前置作業 📌
+## 📌 前置作業 
 ### 1. 準備 Firebase 專案
 -  登入 Firebase 官方網站，按下建立專案!
 -  輸入你的酷酷名稱建立新專案(ﾉ>ω<)ﾉ
@@ -42,7 +42,7 @@ const app = initializeApp(firebaseConfig);
 export default app;
 ```
 
-## 實際操作 🖥️
+## 🖥️ 實際操作 
 ### 1. 實現 Email/密碼註冊功能
 建立 `registerService.js`，實現註冊功能：
 ```javascript
@@ -163,7 +163,7 @@ export const logoutUser = async () => {
   }
 };
 ```
-## 測試與驗證 🔄
+## 🔄 測試與驗證 
 
 完成功能後，可以依以下步驟進行測試：
 1. 註冊新使用者：檢查 Firebase 控制台是否新增使用者。
@@ -171,11 +171,11 @@ export const logoutUser = async () => {
 3. 忘記密碼測試：輸入已註冊的 Email，檢查是否收到重設密碼郵件📩。
 4. 登出測試：確認會話已結束。
 
-## 注意事項 ⚠️
-1. Facebook 第三方登入
+## ⚠️ 注意事項 
+1. **Facebook 第三方登入**
 由於 Facebook 最近的政策調整，對於個人商家變得不太友善，所以這次教學沒有包含串接 Facebook 登入的部分。如果你還是希望使用 Facebook 第三方登入，建議先仔細評估需求，並多多留意相關政策變更喔！💡
 
-2. Firebase 驗證限制
+2. **Firebase 驗證限制**
 Firebase 的驗證目前僅支援 同裝置間的操作，也就是：
     - 如果在手機上接收驗證信，就必須在同一台手機上完成驗證。
     - 如果在電腦上接收驗證信，也必須在同一台電腦上完成。
