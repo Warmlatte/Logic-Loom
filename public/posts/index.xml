@@ -2,71 +2,81 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Logic Loom 🧠🕸️</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>https://warmlatte.github.io/posts/</link>
     <description>Recent content on Logic Loom 🧠🕸️</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>latte.0975582420@gmail.com (Latte)</managingEditor>
     <webMaster>latte.0975582420@gmail.com (Latte)</webMaster>
     <copyright>© 2025 Latte 🥯</copyright>
-    <lastBuildDate>Wed, 08 Jan 2025 23:05:38 +0800</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 23 Jan 2025 23:12:40 +0800</lastBuildDate><atom:link href="https://warmlatte.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>深入了解 Queue（佇列）：概念與應用實作 ✨</title>
+      <link>https://warmlatte.github.io/posts/queue/</link>
+      <pubDate>Thu, 23 Jan 2025 23:12:40 +0800</pubDate>
+      <author>latte.0975582420@gmail.com (Latte)</author>
+      <guid>https://warmlatte.github.io/posts/queue/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>使用 Firebase Admin SDK 實現身份驗證中間件教學 🔐✨</title>
-      <link>http://localhost:1313/posts/set_firebase_authmiddleware/</link>
+      <link>https://warmlatte.github.io/posts/set_firebase_authmiddleware/</link>
       <pubDate>Wed, 08 Jan 2025 23:05:38 +0800</pubDate>
       <author>latte.0975582420@gmail.com (Latte)</author>
-      <guid>http://localhost:1313/posts/set_firebase_authmiddleware/</guid>
+      <guid>https://warmlatte.github.io/posts/set_firebase_authmiddleware/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>用 Naive UI 的 useMessage 打造更友好的使用者操作體驗 🎉</title>
-      <link>http://localhost:1313/posts/set_naive_usemessage/</link>
+      <link>https://warmlatte.github.io/posts/set_naive_usemessage/</link>
       <pubDate>Tue, 07 Jan 2025 15:55:04 +0800</pubDate>
       <author>latte.0975582420@gmail.com (Latte)</author>
-      <guid>http://localhost:1313/posts/set_naive_usemessage/</guid>
+      <guid>https://warmlatte.github.io/posts/set_naive_usemessage/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Firebase Authentication 教學：讓使用者登入變得輕而易舉 🔐</title>
-      <link>http://localhost:1313/posts/set_firebase_authentication/</link>
+      <link>https://warmlatte.github.io/posts/set_firebase_authentication/</link>
       <pubDate>Mon, 06 Jan 2025 15:49:55 +0800</pubDate>
       <author>latte.0975582420@gmail.com (Latte)</author>
-      <guid>http://localhost:1313/posts/set_firebase_authentication/</guid>
+      <guid>https://warmlatte.github.io/posts/set_firebase_authentication/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>為 Express 專案打造互動式 Swagger API 文檔 🌐</title>
-      <link>http://localhost:1313/posts/set_swagger/</link>
+      <link>https://warmlatte.github.io/posts/set_swagger/</link>
       <pubDate>Sun, 05 Jan 2025 19:16:11 +0800</pubDate>
       <author>latte.0975582420@gmail.com (Latte)</author>
-      <guid>http://localhost:1313/posts/set_swagger/</guid>
+      <guid>https://warmlatte.github.io/posts/set_swagger/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>使用 Git 安裝並設置 Hugo 主題 🛠️</title>
-      <link>http://localhost:1313/posts/set_theme/</link>
+      <link>https://warmlatte.github.io/posts/set_theme/</link>
       <pubDate>Fri, 03 Jan 2025 18:59:35 +0800</pubDate>
       <author>latte.0975582420@gmail.com (Latte)</author>
-      <guid>http://localhost:1313/posts/set_theme/</guid>
+      <guid>https://warmlatte.github.io/posts/set_theme/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>如何從零開始搭建 Hugo 網站！ヾ(≧▽≦)o*</title>
-      <link>http://localhost:1313/posts/set_hogo/</link>
+      <link>https://warmlatte.github.io/posts/set_hogo/</link>
       <pubDate>Wed, 01 Jan 2025 13:39:34 +0800</pubDate>
       <author>latte.0975582420@gmail.com (Latte)</author>
-      <guid>http://localhost:1313/posts/set_hogo/</guid>
+      <guid>https://warmlatte.github.io/posts/set_hogo/</guid>
       <description></description>
       
     </item>
