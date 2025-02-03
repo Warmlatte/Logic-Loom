@@ -3,10 +3,16 @@
 **一個熱愛探索新奇事物與直覺設計的全端初學者！(｡･ω･｡)ﾉ♡**
 
 **當我不在寫程式時**
-
 **你會發現我在打電動 🎮、陪貓咪玩耍 🐾、或者偷懶睡大覺 💤**
 
-**歡迎探索下方的專案與文章，或透過 GitHub 與我聯繫喔！(≧∀≦)ゞ 🚀**
+<div style="display: flex; justify-content:center; gap: 1rem" >
+<a href="https://warmlatte.github.io/Logic-Loom/projects">💼 探索我的專案</a>
+<a href="https://warmlatte.github.io/Logic-Loom/posts">📜 閱讀技術文章</a>
+</div>
+
+**也歡迎探索我的 <a style="text-decoration: none; font-weight: bold;" href="https://github.com/Warmlatte">GitHub</a> 取得原始碼或是聯繫我喔！(≧∀≦)ゞ 🚀**
+
+
 
 <!-- <br/> -->
 
