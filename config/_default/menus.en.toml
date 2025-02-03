@@ -11,26 +11,28 @@
 # ordered by weight from lowest to highest.
 
 [[main]]
-  name = "Home"
+  name = "🐈 Home"
   pageRef = "/"
   weight = 10
 
 [[main]]
-  name = "Post"
+  name = "📜 Post"
   pageRef = "posts"
   weight = 20
+
+[[main]]
+ name = "💼 Project"
+ pageRef = "projects"
+ weight = 30
+
 
 [[main]]
   pre = "github"
   name = "GitHub"
   url = "https://github.com/Warmlatte"
-  weight = 30
+  weight = 40
 
-# [[main]]
-#   identifier = "github2"
-#   pre = "github"
-#   url = "https://github.com/nunocoracao/blowfish"
-#   weight = 40
+
 
 # [[main]]
 # name = "example sub-menu 1"
