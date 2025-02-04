@@ -3,7 +3,6 @@ date: '2025-01-05T19:16:11+08:00'
 draft: false
 title: '🤝 Joitogether - 就愛揪團，一起相聚！'
 featured:
-  
 ---
 > 一個專為社交聚會與團隊協作打造的群組邀請與管理平台。
 
@@ -131,3 +130,5 @@ featured:
 ## 📬 聯絡方式  
 如果你對 **Joitogether** 有興趣，或者有任何建議，歡迎聯絡我！   
 📩 <strong>Email</strong>：<a href="mailto:latte.0975582420@gmail.com" >latte.0975582420@gmail.com</a>
+
+---

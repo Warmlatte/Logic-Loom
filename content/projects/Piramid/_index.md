@@ -66,3 +66,5 @@ Piramid 是一個專為繪師打造的個人接案與作品展示網站，採用
 ## **📬 聯絡方式**
 如果你對 Piramid 有興趣，或者有任何建議，歡迎聯絡我！  
 📩 <strong>Email</strong>：<a href="mailto:latte.0975582420@gmail.com" >latte.0975582420@gmail.com</a>
+
+---
