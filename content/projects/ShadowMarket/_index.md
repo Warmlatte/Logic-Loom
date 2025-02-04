@@ -57,7 +57,7 @@ Shadow Market 的誕生源於對 **D&D 桌遊與奇幻冒險世界的熱愛**。
 ---
 
 ### 🗣️ AI 聊天小精靈 - 愛吹牛的小精靈店員
-<img src="aiChat.jpg" alt="AI 聊天小精靈" width="80%"/>  
+<img src="aiChat.JPG" alt="AI 聊天小精靈" width="80%"/>  
 
 ✅ **內建 AI 助手，僅回答 D&D 相關問題**，營造沉浸式冒險氛圍！  
 📖 **角色扮演模式**：AI 會根據 **NPC 設定** 回應對話，不會回答 D&D 以外的內容！  
